@@ -1,0 +1,24 @@
+﻿@model BarberShop.Models.ModelAPIWeather.WeatherViewModel
+
+<div class="weather-api">
+
+    @if (DateTime.Now.Hour > 7 && DateTime.Now.Hour < 21)
+    {
+
+        <ul>
+            <li>@Model.Name</li>
+            <li>@Model.Main.Temp °С</li>
+            <li><span class="icon">🌝</span></li>
+        </ul>
+    }
+    else
+    {
+        <ul>
+            <li>@Model.Name</li>
+            <li>@Model.Main.Temp °С</li>
+            <li><span class="icon">🌑</span></li>
+        </ul>
+
+    }
+
+</div>

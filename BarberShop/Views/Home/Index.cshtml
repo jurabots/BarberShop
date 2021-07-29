@@ -1,0 +1,17 @@
+﻿@model BarberShop.Models.HomePageDescr.HomePageDescription
+@{
+    ViewData["Title"] = "Home page";
+}
+@section WeatherHome{
+    @await Component.InvokeAsync(nameof(ReceivedWeather))
+}
+<div class="one"><h1>Casual Barbershop</h1></div>
+<div class="border-gorizontal">
+    <div class="border-vertical">
+      <img src="~/img/barber.jpg" alt="Proffessional barber" />
+    </div>
+</div>
+<div class="three"><h1>Евгений Чурай</h1></div>
+<div class="outer-desc">
+    <p>@Html.Raw(Model.Description)</p>
+</div>

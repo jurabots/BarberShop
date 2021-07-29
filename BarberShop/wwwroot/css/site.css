@@ -1,0 +1,226 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+    font-size: 14px;
+}
+.three {
+    padding: 0px 20px;
+    text-align: center;
+}
+
+    .three h1 {
+        font-family: 'Merriweather', serif;
+        position: relative;
+        color: #FCF2E5;
+        background: #90806A;
+        font-size: 2.5em;
+        font-weight: normal;
+        padding: 10px 40px;
+        display: inline-block;
+        margin: 0;
+        line-height: 1;
+    }
+
+        .three h1:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: -15px;
+            background: #90806A;
+        }
+
+        .three h1:after {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 80%;
+            border-top: 10px solid #90806A;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -25px;
+        }
+
+@media (max-width: 500px) {
+    .three h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 400px) {
+    .three h1 {
+        font-size: 1.5em;
+        padding: 10px 30px;
+    }
+}
+.border-gorizontal {
+    padding-top:-200px;
+    position: relative;
+    max-width: 300px;
+    margin: 50px auto;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.48);
+}
+
+    .border-gorizontal img {
+        display: block;
+        width: 100%;
+    }
+
+    .border-gorizontal:before {
+        content: "";
+        position: absolute;
+        right: -20px;
+        left: -20px;
+        bottom: 14px;
+        z-index: 1;
+        border-top: 6px double #D9863D;
+    }
+
+    .border-gorizontal:after {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: -20px;
+        right: -20px;
+        z-index: 2;
+        border-top: 6px double #D9863D;
+    }
+
+.border-vertical {
+    position: relative;
+}
+
+    .border-vertical:before {
+        content: "";
+        position: absolute;
+        left: 14px;
+        top: -20px;
+        bottom: -20px;
+        z-index: 3;
+        border-left: 6px double #D9863D;
+    }
+
+    .border-vertical:after {
+        content: "";
+        position: absolute;
+        right: 14px;
+        top: -20px;
+        bottom: -20px;
+        z-index: 4;
+        border-left: 6px double #D9863D;
+    }
+.outer-desc {
+    margin: 0;
+    background: #FFF4E0;
+    color: #474C4F;
+    padding: 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat",sans-serif;
+    top: 200px;
+}
+    .outer-desc:after {
+        content: "";
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        right: 15px;
+        height: 4px;
+        border-top: 1px dotted #474C4F;
+        border-bottom: 1px dotted #474C4F;
+    }
+
+    .outer-desc p {
+        font-size: 20px;
+        letter-spacing: .05em;
+        line-height: 1.4;
+    }
+@media (max-width: 500px) {
+    .outer-desc {
+        font-size: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .outer-desc p {
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.weather-api {
+    position: relative;
+    font-family: "Montserrat",sans-serif;
+}
+
+
+    .weather-api ul {
+        padding: 0px;
+    }
+
+        .weather-api ul li {
+            display: inline;
+            list-style: none;
+            width: 90px;
+            text-align: left;
+            color: black;
+            margin: 0 4px;
+            font-size: 16px;
+            position: relative;
+            top: 3px;
+        }
+
+body {
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+.one {
+  padding: 50px 20px;
+  text-align: center;
+}
+    .one h1 {
+        font-family: "Montserrat",sans-serif;
+        font-size: 90px;
+        color: #D9863D;
+        position: relative;
+        display: inline-block;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        padding: 11px 60px;
+        margin: 0;
+        line-height: 1;
+    }
+        .one h1:before, .one h1:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 30px;
+            height: 100%;
+            border-left: 2px solid;
+            border-right: 2px solid;
+            background: repeating-linear-gradient(180deg, transparent, transparent 2px, #D9863D 2px, #D9863D 4px);
+        }
+.one h1:before {left: 0;}
+.one h1:after {right: 0;}
+@media (max-width: 420px) {
+  .one h1 {font-size: 2em;}
+}
