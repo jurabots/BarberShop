@@ -14,8 +14,6 @@ namespace BarberShop.Controllers
         public PriceController(BarberShopDB context)
         {
             Context = context;
-
-
         }
         public BarberShopDB Context { get; }
 
@@ -30,7 +28,7 @@ namespace BarberShop.Controllers
                 Context.Service.AddRange(init.AddServicePrice());
                 Context.SaveChanges();
             }
-            return View();
+            return View(Context.Service.ToList());
         }
     }
   

@@ -1,4 +1,49 @@
-﻿@{
+﻿@model IEnumerable<BarberShop.Models.ServicesAndPrice.Service>
+@{
     ViewData["Title"] = "Services";
 }
-"Hello"
+<h1 class="header-price">Цены на стрижку</h1>
+
+<div class="cont-price">
+    @foreach (var item in Model)
+    {
+        <div class="columns">
+            <ul class="price">
+                <li class="header">@item.OurService</li>
+                <li class="grey">@item.Price грн</li>
+                @if (item.Id == 6)
+                {
+                    <li><img src="~/img/serciceimg/opaskas.jpg" alt="Alternate Text" class="img-price" /></li>
+
+                }
+                @if (item.Id == 3)
+                {
+                    <li><img src="~/img/serciceimg/usus.jpg" alt="Alternate Text" class="img-price" /></li>
+
+                }
+                @if (item.Id == 1)
+                {
+                    <li><img src="~/img/serciceimg/haircuts.jpg" alt="Alternate Text" class="img-price" /></li>
+
+                }
+                @if (item.Id == 2)
+                {
+                    <li><img src="~/img/serciceimg/beards.jpg" alt="Alternate Text" class="img-price" /></li>
+
+                }
+                @if (item.Id == 4)
+                {
+                    <li><img src="~/img/serciceimg/nasadkaa.jpg" alt="Alternate Text" class="img-price" /></li>
+
+                }
+                @if (item.Id == 5)
+                {
+                    <li><img src="~/img/serciceimg/kid.jpg" alt="Alternate Text" class="img-price" /></li>
+
+                }
+
+                <li class="grey"><button class="buy-button">Заказать</button></li>
+            </ul>
+        </div>
+    }
+</div>
